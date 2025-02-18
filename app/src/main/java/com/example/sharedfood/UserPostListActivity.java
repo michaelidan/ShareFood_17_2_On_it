@@ -52,11 +52,13 @@ public class UserPostListActivity extends AppCompatActivity {
 
 
     private void viewUserPosts(User user) {
-        Log.d("UserPostListActivity", "📌 Sending userId: " + user.getId()); // ✅ משתמשים ב- getId()
-        Intent intent = new Intent(this, UserPostsActivity.class);
-        intent.putExtra("userId", user.getId()); // 🔴 שולחים את ה-ID הנכון
+        Log.d("UserPostListActivity", "📌 Sending userId: " + user.getId());
+
+        Intent intent = new Intent(this, PostsOfUserActivity.class);
+        intent.putExtra("userId", user.getId()); // שולחים את ה-ID הנכון
         startActivity(intent);
     }
+
 
 
 }
