@@ -71,6 +71,11 @@
         <activity
             android:name=".UserPostListActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".PostsOfUserActivity"
+            android:exported="false" />
+
         <!-- Michael, 27/01/2025 END -->
         <!-- Michael, 17/2/2025 END -->
 
